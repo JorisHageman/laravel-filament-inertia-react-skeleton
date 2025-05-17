@@ -1,11 +1,14 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/react-starter-kit",
+    "name": "joris/laravel-skeleton",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "Laravel Filament Inertia React Skeleton",
     "keywords": [
         "laravel",
-        "framework"
+        "filament",
+        "inertia",
+        "react",
+        "skeleton"
     ],
     "license": "MIT",
     "require": {
