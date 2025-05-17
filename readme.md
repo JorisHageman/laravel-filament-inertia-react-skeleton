@@ -2,6 +2,14 @@
 
 This project is a pre-configured skeleton application that combines Laravel, Filament Admin Panel, Inertia.js and React to provide a comprehensive starting point for web application development.
 
+## Quick start (with Docker)
+
+    ```bash
+    composer create-project JorisHageman/laravel-filament-inertia-react-skeleton
+    cd laravel-filament-inertia-react-skeleton
+    composer setup
+    ```
+
 ## Features
 
 - **Laravel 12.x** - Latest version of Laravel framework
