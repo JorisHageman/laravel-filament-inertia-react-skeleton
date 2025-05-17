@@ -73,6 +73,8 @@
         "setup": [
             "./vendor/bin/sail up -d",
             "./vendor/bin/sail composer install",
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php -r \"$env = file_get_contents('.env'); $pattern = '/DB_CONNECTION=.*\\n(#\\s*DB_HOST.*\\n)?(#\\s*DB_PORT.*\\n)?(#\\s*DB_DATABASE.*\\n)?(#\\s*DB_USERNAME.*\\n)?(#\\s*DB_PASSWORD.*\\n)?/m'; $replacement = 'DB_CONNECTION=mariadb\\nDB_HOST=mariadb\\nDB_PORT=3306\\nDB_DATABASE=laravel\\nDB_USERNAME=sail\\nDB_PASSWORD=password\\n'; file_put_contents('.env', preg_replace($pattern, $replacement, $env));\"",
             "./vendor/bin/sail artisan migrate --seed"
         ]
     },
