@@ -23,8 +23,8 @@ This project is a pre-configured skeleton application that combines Laravel, Fil
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/laravel-filament-inertia-react-shadcnui-skeleton.git
-   cd laravel-filament-inertia-react-shadcnui-skeleton
+   git clone https://github.com/yourusername/laravel-filament-inertia-react-skeleton.git
+   cd laravel-filament-inertia-react-skeleton
    ```
 
 2. Install PHP dependencies:
@@ -103,7 +103,7 @@ composer test
 This project uses Laravel Sail for Docker integration. The Docker setup includes:
 
 - PHP 8.4 container
-- MySQL 8.0 database
+- MariaDB 10.6 database
 - Node.js container for frontend development
 
 You can start the Docker environment with:
