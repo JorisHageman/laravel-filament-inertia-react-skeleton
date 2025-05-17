@@ -5,7 +5,7 @@ This project is a pre-configured skeleton application that combines Laravel, Fil
 ## Quick start (with Docker)
 
 ```bash
-composer create-project JorisHageman/laravel-filament-inertia-react-skeleton
+composer create-project joris/laravel-skeleton
 cd laravel-filament-inertia-react-skeleton
 composer setup
 ```
